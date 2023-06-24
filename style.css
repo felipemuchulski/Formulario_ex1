@@ -25,41 +25,39 @@ body::before {
 }
 
 .page {
-    width: 736px;
-    margin: 0 auto;
+  width: 736px;
+  margin: 0 auto;
 }
 
-   header {
-    width: 319px;
-    margin-top: 74px;
-    
+header {
+  width: 319px;
+  margin-top: 74px;
 }
 
 header h1 {
-    height: 60px;
+  height: 60px;
 
-    font-family: 'Staatliches', sans-serif;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 60px;
-    
-    color: white;
+  font-family: "Staatliches", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60px;
 
-    margin-bottom: 18px;
+  color: white;
+
+  margin-bottom: 18px;
 }
 
 header p {
-   font-size: 20px;
-   line-height: 30px;
-   font-weight: 400;
-   
-   color: white;
-   
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+
+  color: white;
 }
 
 form {
   width: 750px;
-  background: #E6E6F0;
+  background: #ffff;
   min-height: 300px;
 
   margin-top: 58px;
@@ -68,27 +66,42 @@ form {
 
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 30px;
 }
 
 fieldset {
   border: none;
 }
 
-fieldset legend {
-  font-family: 'Staatliches', sans-serif;
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset legend,
+.legends-group legend {
+  font-family: "Staatliches", sans-serif;
   font-size: 24px;
   line-height: 34px;
   color: #535971;
 
-  border-bottom: 1px solid rgb(12, 11, 11);
+  border-bottom: 1px solid #e6e6f0;
+  padding-bottom: 16px;
+}
+
+.fieldset-wrapper legend {
+  margin-bottom: 36px;
 }
 
 .cols-2 {
   display: flex;
   align-items: center;
   gap: 22px;
+}
 
+.cols-2 input {
+  width: 300px;
+  height: 56px;
 }
 
 .input-wrapper {
@@ -96,15 +109,108 @@ fieldset legend {
   flex-direction: column;
 }
 
+.input-wrapper span {
+  color: #c1bccc;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.input-wrapper span:hover {
+  color: #4e4958;
+}
+
 .input-wrapper label {
   font-size: 14px;
   line-height: 24px;
-  color: #4E4958;
+  color: #4e4958;
   font-weight: 400;
 
   margin-bottom: 8px;
+  margin-top: 16px;
 }
 
 .input-wrapper input {
+  height: 56px;
+  border-radius: 8px;
 
+  border: 1px solid #e6e6f0;
+  background: #fafafc;
+  padding: 0 24px;
+}
+.fieldset-wrapper-2 legend {
+  padding-bottom: 8px;
+  margin-bottom: 32px;
+}
+
+.legends-group legend {
+  border: none;
+  padding-bottom: 8px;
+}
+
+.legends-group label {
+  margin-top: 0;
+}
+
+.cols-3-first {
+  display: flex;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+.cols-3-first > div:nth-child(1) {
+  width: 300px;
+  margin-right: 32px;
+}
+
+.cols-3-first > div:not(:nth-child(1)) {
+  width: 140px;
+  margin-right: 20px;
+}
+
+.cols-3-second {
+  display: flex;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+.cols-3-second > div:nth-child(1) {
+  width: 300px;
+  margin-right: 32px;
+}
+
+.cols-3-second > div:not(:nth-child(1)) {
+  width: 140px;
+  margin-right: 20px;
+}
+
+footer {
+  width: 750px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+
+  padding: 52px 71px;
+
+  border-radius: 0px 0px 20px 20px;
+  background: #535971;
+  margin-bottom: 100px;
+}
+
+footer button {
+  color: #fff;
+  font-size: 20px;
+  font-family: Staatliches;
+  line-height: 26px;
+}
+.button-save {
+  display: flex;
+  width: 608px;
+  height: 56px;
+  padding: 15px 40px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 20px;
+  background: #ff5374;
+  border: 0;
 }

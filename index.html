@@ -23,7 +23,7 @@
         <fieldset>
             <div class="fieldset-wrapper"> 
             <legend>INFORMAÇÕES PESSOAIS</legend>
-
+           
             <div class="cols-2">
             <div class="input-wrapper">
                 <label for="event-name">Nome</label>
@@ -47,8 +47,66 @@
             </div>
             </div>
         </fieldset>
-    </form>
 
+        <fieldset>
+          <div class="fieldset-wrapper-2">
+            <legend>INFORMAÇÕES DO MENTOR</legend>
+
+            <div class="input-wrapper">
+              <label for="event-name-mentor">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+              <input type="text" name="" id="event-name-mentor">
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="fieldset-wrapper-3">
+            <legend>SEUS HORÁRIOS DISPONÍVEIS</legend>
+          </div>
+        </fieldset>
+
+        <div class="legends-group">
+          <legend>Primeira Mentoria</legend>
+          <div class="cols-3-first">
+            <div class="input-wrapper">
+              <label for="event-data-first">Data <span>(DD/MM/AAAA)</span></label>
+              <input type="date" name="" id="event-data-first">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-das-first">Das</label>
+              <input type="time" name="" id="event-das-first">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-ate-first">Até</label>
+              <input type="time" id="event-ate-first">
+            </div>
+          </div>
+
+          <legend>SEGUNDA MENTORIA</legend>
+          <div class="cols-3-second">
+            <div class="input-wrapper">
+              <label for="event-data-second">Data <span>(DD/MM/AAAA)</span></label>
+              <input type="date" name="" id="event-data-second">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-das-second">Das</label>
+              <input type="time" name="" id="event-das-second">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-ate-first">Até</label>
+              <input type="time" id="event-ate-second">
+            </div>
+          </div>
+        </div>
+     </form>
+
+     <footer>
+      <button form="form-subscribe" class="button-save">Salvar</button>
+     </footer>
    </div>
   </body>
 </html>
